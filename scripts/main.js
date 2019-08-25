@@ -1,7 +1,7 @@
 
-var id;
-var name;
-var pokemonNames;
+var id; // ID number of the Pokemon that was chosen
+var name; // String name of the Pokemon
+var pokemonNames; // JSON Array of the Pokemon names
 
 function readJson (callback) {
   // Grabs the JSON file containing the data of all the Pokemon.
@@ -22,7 +22,7 @@ function readJson (callback) {
 
 
 
-// Generates the image when ran
+// Generates the image when ran.
 function generateImage(jsonFile) {
   id = (Math.floor(Math.random() * 250) + 1);
   pokemonNames = jsonFile;
@@ -47,15 +47,17 @@ function generateImage(jsonFile) {
   }
 }
 
-// When the page loads, run the readJson function, then run generateImage when it's done
-readJson(function (result) {
-  generateImage(result);
-});
-
+// Function that runs when the "Generate Image" button is pressed.
 function buttonPress() {
   var canvas = document.getElementById('tutorial');
   var ctx = canvas.getContext('2d');
   // Clears the canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
   generateImage(pokemonNames);
 }
+
+// When the page loads, run the readJson function, then run generateImage when it's done
+readJson(function (result) {
+  generateImage(result);
+});
