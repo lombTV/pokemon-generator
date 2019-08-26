@@ -1,2 +1,2 @@
-# Pokemon Generator
-Generates a random Pokemon with its name and sprite. Hosted [on my Neocities page](https://delibirdfanpage.neocities.org/pokemon.html).
+# Delibird Webpage Test
+A test webpage made for learning purposes.
