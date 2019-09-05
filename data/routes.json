@@ -1,0 +1,12 @@
+{
+    "Routes": [
+        {
+            "Name":"Route 1",
+            "Spawns": ["Rattata", "Pidgey"]
+        },
+        {
+            "Name":"Route 2",
+            "Spawns": ["Rattata", "Pidgey", "Caterpie", "Weedle"]
+        }
+    ]
+}

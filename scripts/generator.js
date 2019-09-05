@@ -76,3 +76,4 @@ function buttonPress() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   generateImage(pokemonNames);
 }
+
