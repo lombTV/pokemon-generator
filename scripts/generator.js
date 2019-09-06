@@ -68,7 +68,7 @@ readJson(function (result) {
 
   
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 150; i++) {
     var canv = document.createElement('canvas');
     canv.id = 'someId';
     document.body.appendChild(canv);
