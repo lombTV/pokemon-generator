@@ -55,7 +55,7 @@ function generateImage(jsonFile, canvas) {
       
       console.log(id);
       ctx.fillText(name, canvas.width/2, 20);
-      ctx.font = '15px Noto Sans HK';
+      ctx.font = '15px Comic Sans MS';
       ctx.fillText('Level ' + level, canvas.width/2, 40);
       ctx.drawImage(img, canvas.width / 2 - img.width / 2, 55);
   }
@@ -68,7 +68,7 @@ readJson(function (result) {
 
   
 
-  for (let i = 0; i < 150; i++) {
+  for (let i = 0; i < 200; i++) {
     var canv = document.createElement('canvas');
     canv.id = 'someId';
     document.body.appendChild(canv);
