@@ -55,7 +55,7 @@ function generateImage(jsonFile, canvas) {
       
       console.log(id);
       ctx.fillText(name, canvas.width/2, 20);
-      ctx.font = '15px Comic Sans MS';
+      ctx.font = '15px Noto Sans HK';
       ctx.fillText('Level ' + level, canvas.width/2, 40);
       ctx.drawImage(img, canvas.width / 2 - img.width / 2, 55);
   }
